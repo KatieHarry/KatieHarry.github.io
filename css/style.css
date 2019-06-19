@@ -47,7 +47,7 @@ h4 {
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
-    color: #425BB5;
+    color: #aaa;
     margin-left: 40px;
     font-weight: 700;
 }
@@ -59,7 +59,7 @@ h4:before {
     content: "";
     display: block;
     height: 2px;
-    background: #425BB5;
+    background: #aaa;
     top: 9px;
 }
 
@@ -249,13 +249,13 @@ nav li {
 nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #444;
+    color: #fff;
     font-size: 11px;
     font-weight: bold;
 }
 
 .bg-nav {
-    background: #fff;
+    background: #b5b5b5;
     border-bottom: 1px solid #f3f3f3
 }
 
@@ -285,6 +285,10 @@ a.active {
     background: url(../img/home-bg-2.jpg);
     background-size: cover;
     height: 100vh;
+}
+
+#home h1 {
+	color: white;
 }
 
 .table-cell {
@@ -579,10 +583,6 @@ a.active {
     text-align: center;
 }
 
-.portfolio_item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
 
 .portfolio-padding {
     padding: 50px 0;
@@ -618,6 +618,22 @@ a.active {
 }
 
 .animatedModal-on .close-popup-modal {
+    opacity: 1;
+}
+
+.animatedModal02-on .close-popup-modal {
+    opacity: 1;
+}
+
+.animatedModal03-on .close-popup-modal {
+    opacity: 1;
+}
+
+.animatedModal04-on .close-popup-modal {
+    opacity: 1;
+}
+
+.animatedModal05-on .close-popup-modal {
     opacity: 1;
 }
 
