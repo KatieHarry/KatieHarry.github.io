@@ -1,6 +1,19 @@
+:root {
+  --pink: #c585cc;
+  --transparent-pink: rgba(197, 133, 204, 0.1);
+  --navy: #121030;
+  --navy-shadow: #0c0b21;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --small-font: 16px;
+  --medium-font: 18px;
+  --large-font: 20px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'RobotoRegular', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,3 +24,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-outline-secondary {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+.btn-outline-secondary:hover {
+    color: var(--pink);
+    background-color: var(--transparent-pink);
+    border-color: var(--pink);
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('./fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url('./fonts/Roboto-Thin.ttf');
+}
+
+@import '~bootstrap/dist/css/bootstrap.min.css';

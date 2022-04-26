@@ -1,0 +1,29 @@
+[data-letters]:before {
+  content:attr(data-letters);
+  display:inline-block;
+  font-size:1em;
+  width:2em;
+  height:2em;
+  line-height:1.8em;
+  text-align:center;
+  border-radius:50%;
+  vertical-align:middle;
+  margin-right:1em;
+  background: transparent;
+  transition: 0.3s;
+}
+
+[data-letters]:hover:before {
+  background-color: var(--transparent-pink);
+  transition: 0.3s;
+}
+
+.logo-light:before {
+  color: var(--pink);
+  border: 0.15em solid var(--pink);
+}
+
+.logo-dark:before {
+  color: var(--navy);
+  border: 0.15em solid var(--navy);
+}

@@ -1,0 +1,21 @@
+.nav {
+  top: -115px;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.nav.navShowTop {
+  top: 0;
+}
+
+.nav.navShowLow {
+  top: -15px;
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+}
+
+/* Desktop styles */
+@media (min-width: 850px) {
+  .nav.navShowLow {
+    backdrop-filter: blur(10px);
+  }
+}

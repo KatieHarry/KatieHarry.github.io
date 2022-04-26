@@ -1,0 +1,51 @@
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  margin: auto;
+  margin-top: -100px;
+}
+
+.hello {
+    color: var(--pink);
+    font-size: clamp(12px, 4vw, 40px);
+
+}
+
+.name {
+    color: var(--lightest-slate);
+    font-size: clamp(30px, 8vw, 100px);
+    display: flex;
+    flex-direction: row;
+    line-height: 1;
+}
+
+.job {
+    color: var(--light-slate);
+    font-size: clamp(30px, 8vw, 100px);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.bio {
+    color: var(--light-slate);
+    font-size: clamp(12px, 3vw, 30px);
+}
+
+/* Desktop styles */
+@media (min-width: 850px) {
+  .about {
+    padding: 0 100px;
+    max-width: 1300px;
+  }
+
+  .about .job {
+    white-space: nowrap;
+  }
+
+  .job {
+    margin-bottom: 20px;
+  }
+}
