@@ -1,4 +1,10 @@
 .my-button {
   padding: 15px;
   font-size: inherit;
+  font-size: inherit;
+  width: 100%;
+}
+
+button.my-button:focus {
+  box-shadow: none;
 }

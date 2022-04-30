@@ -5,48 +5,6 @@ import './Header.css';
 
 function Header() {
 
-  const Header = {
-    paddingTop: "20px",
-    paddingBottom: "20px",
-    display: "flex",
-    flex: "1",
-    width: "100%",
-    height: "110px",
-    background: "var(--navy)",
-    position: "fixed",
-    zIndex: "300",
-  }
-
-  const HeaderLogoWrap = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    marginLeft: "30px",
-    zIndex: "200",
-  }
-
-  const HeaderLogo = {
-    color: "inherit",
-    textDecoration: "inherit",
-    fontFamily: "RobotoRegular",
-    fontSize: "25px",
-    padding: "20px",
-  }
-
-  const HeaderNavbar = {
-    display: "flex",
-    flex: "1",
-    flexDirection: "column",
-  }
-
-  const HeaderNavigation = {
-    display: "flex",
-    flex: "1",
-    flexDirection: "row",
-    justifyContent: "flex-end",
-    color: "white",
-  }
-
   const [showTop, setShowTop] = useState(true);
   const [showLow, setShowLow] = useState(false);
 
@@ -77,14 +35,14 @@ function Header() {
   }, [])
 
   return (
-    <section style={Header} className={ `nav ${ showTop && 'navShowTop' } ${ showLow && 'navShowLow'}` }>
-      <section style={HeaderLogoWrap}>
-        <a href="/" style={HeaderLogo}>
+    <section className={ `header-wrap nav ${ showTop && 'navShowTop' } ${ showLow && 'navShowLow'}` }>
+      <section className="header-logo-wrap">
+        <a href="#About" className="header-logo">
           <Logo color="light"/>
         </a>
       </section>
-      <section style={HeaderNavbar}>
-        <section style={HeaderNavigation}>
+      <section className="header-navbar-wrap">
+        <section className="header-navbar">
           <Navbar />
         </section>
       </section>

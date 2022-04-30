@@ -5,12 +5,6 @@ import './Contact.css';
 
 function Contact () {
 
-  const NameEmailGroup = {
-    display: "flex",
-    width: "100%",
-  }
-
-
   const [submitted, setSubmitted] = useState(false);
   const form = useRef();
 
@@ -40,13 +34,13 @@ function Contact () {
           method="POST"
           target="_blank"
         >
-          <section style={ NameEmailGroup }>
+          <section className="name-email-wrap">
             <div className="contact-name">
               <input
                 type="text"
                 placeholder="Your name"
                 name="from_name"
-                className=""
+                className="form-input"
                 required
               />
             </div>
@@ -55,7 +49,7 @@ function Contact () {
                 type="email"
                 placeholder="Email"
                 name="from_email"
-                className=""
+                className="form-input"
                 required
               />
             </div>
@@ -65,7 +59,7 @@ function Contact () {
               type="text"
               placeholder="Subject"
               name="subject"
-              className=""
+              className="form-input"
               required
             />
           </div>
@@ -73,7 +67,7 @@ function Contact () {
             <textarea
               placeholder="Message"
               name="message"
-              className=""
+              className="form-input"
               required
             />
           </div>
