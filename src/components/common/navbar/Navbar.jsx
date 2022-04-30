@@ -44,8 +44,8 @@ function Navbar (props) {
           </a>
         </section>
         <section onClick={toggleClass} className={`hamburger-icon ${open && 'show-hamburger'}`}>
-            <List className="icon-open" color="var(--pink)" size={50} />
-            <XLg className="icon-close" color="var(--pink)" size={45} />
+            <List className="icon-open" color="var(--pink)" size={40} />
+            <XLg className="icon-close" color="var(--pink)" size={35} />
         </section>
       </section>
     </section>

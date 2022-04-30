@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 25px;
     z-index: 1000;
 }
 
@@ -25,7 +25,7 @@
   color: inherit;
   text-decoration: inherit;
   font-family: 'RobotoRegular';
-  font-size: 25px;
+  font-size: 22px;
   padding: 20px;
 }
 

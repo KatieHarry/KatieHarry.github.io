@@ -10,8 +10,8 @@ function Footer () {
   return (
     <section className="footer-wrap">
       <section className="footer-social">
-        <a href="https://github.com/KatieHarry" target="_blank" rel="noreferrer"><Github className="icon" size={30} /></a>
-        <a href="https://www.linkedin.com/in/katie-harry/" target="_blank" rel="noreferrer"><Linkedin className="icon" size={30} /></a>
+        <a href="https://github.com/KatieHarry" target="_blank" rel="noreferrer"><Github className="icon" size={25} /></a>
+        <a href="https://www.linkedin.com/in/katie-harry/" target="_blank" rel="noreferrer"><Linkedin className="icon" size={25} /></a>
         <span className="footer-line"></span>
       </section>
       <section className="footer-contact">
@@ -20,8 +20,8 @@ function Footer () {
         <span className="mobile-email">
           <a href="mailto:kathryn.e.harry@gmail.com">kathryn.e.harry@gmail.com</a></span>
         <span className="mobile-social">
-          <a href="https://github.com/KatieHarry" target="_blank" rel="noreferrer"><Github className="icon" size={40} /></a>
-          <a href="https://www.linkedin.com/in/katie-harry/" target="_blank" rel="noreferrer"><Linkedin className="icon" size={40} /></a>
+          <a href="https://github.com/KatieHarry" target="_blank" rel="noreferrer"><Github className="icon" size={30} /></a>
+          <a href="https://www.linkedin.com/in/katie-harry/" target="_blank" rel="noreferrer"><Linkedin className="icon" size={30} /></a>
         </span>
         <Contact />
       </section>

@@ -37,7 +37,7 @@
   position: fixed;
   top: 15px;
   justify-content: end;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .hamburger-wrap.show-hamburger .hamburger-menu .navbar-item {
@@ -101,10 +101,6 @@
 
   .hamburger, .hamburger-icon, .hamburger-wrap {
     display: none;
-  }
-
-  .navbar-wrap {
-    margin-top: auto;
   }
 
   .navbar-item {
