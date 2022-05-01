@@ -46,11 +46,11 @@
   transition: 0.1s;
   position: relative;
   z-index: 1;
-  max-width: 270px;
+  width: clamp(200px, 100%, 270px);
 }
 
 .me img {
-  max-width: 270px;
+width: clamp(200px, 100%, 270px);
   border-radius: 5px;
 }
 

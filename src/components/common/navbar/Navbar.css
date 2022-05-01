@@ -86,7 +86,7 @@
 
 .hamburger-menu .navbar-button {
   font-size: var(--large-font);
-  padding: 0 120px;
+  padding: 0 clamp(5px, 20vw, 120px);
 }
 
 .hamburger-menu .navbar-button .btn {
