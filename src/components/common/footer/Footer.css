@@ -10,12 +10,8 @@
   transform: translateY(-5px);
 }
 
-.footer-social {
+.footer-line {
   display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  flex-direction: column;
 }
 
 .footer-contact {
@@ -29,7 +25,6 @@
 
 .contact-text {
   color: var(--pink);
-  font-size: 50px;
   display: flex;
   align-items: flex-start;
   max-width: 400px;
@@ -37,24 +32,7 @@
   font-size: clamp(30px, 7vw, 50px);
 }
 
-.mobile-social .icon:hover {
-  color: var(--pink);
-  transition: 0.3s;
-}
-
-.mobile-email, .mobile-social {
-  display: flex;
-  width: 100%;
-  max-width: 400px;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.mobile-email a, .mobile-social a {
-  color: var(--lightest-slate);
-}
-
-.mobile-email a {
+.footer-email a {
   text-decoration: none;
   font-size: clamp(12px, 3vw, 16px);
   margin-bottom: -10px;
@@ -62,7 +40,29 @@
   z-index: 1;
 }
 
-.mobile-social {
+.footer-email, .footer-social {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-email a, .footer-email a {
+  color: var(--lightest-slate);
+}
+
+.footer-social .icon:hover {
+  color: var(--pink);
+  transition: 0.3s;
+}
+
+.footer-social a:hover, .footer-email a:hover {
+  color: var(--pink);
+  transition: 0.3s;
+}
+
+.footer-social {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -70,61 +70,36 @@
   margin-bottom: 10px;
 }
 
-.mobile-social a {
+
+.footer-social .icon {
+  color: var(--lightest-slate);
+  transition: 0.3s;
+}
+
+.footer-social a {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 10px;
 }
 
-.footer-email-wrap {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 20px;
-  width: 40px;
-}
-
-.footer-email a {
-  writing-mode: vertical-rl;
-  color: var(--lightest-slate);
-  transition: 0.3s;
-  text-decoration: none;
-  margin: 20px auto;
-  padding: 10px;
-  line-height: 14px;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  writing-mode: vertical-rl;
-  position: relative;
-}
-
-.footer-email a:hover, .mobile-email a:hover {
-  color: var(--pink);
-  transition: 0.3s;
-}
-
 .footer-line {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: var(--light-slate);
-}
-
-.footer-email {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
-  position: relative;
-  line-height: 1.3;
+  display: none;
 }
 
 /* Desktop styles */
 @media (min-width: 850px) {
-  .footer-social {
-    display: flex;
+
+  .footer-line {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: auto;
+    background-color: var(--light-slate);
+  }
+
+  .footer-social .footer-line {
+    margin-top: 10px;
   }
 
   .footer-contact {
@@ -132,22 +107,64 @@
     align-items: flex-start;
   }
 
-  .mobile-email, .mobile-social {
-    display: none;
-  }
-
   .contact-text {
     width: 600px;
   }
 
-  .footer-email-wrap {
+  .footer-email {
     display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 40px;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 1.3;
+  }
+
+  .footer-email a {
+    writing-mode: vertical-rl;
+    color: var(--lightest-slate);
+    transition: 0.3s;
+    text-decoration: none;
+    margin: 20px auto;
+    padding: 10px;
+    line-height: 14px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+  }
+
+  .footer-social {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+    width: 40px;
+  }
+
+  .footer-social a {
+    padding-bottom: 15px;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+
+  .footer-social a:hover {
+    transform: translateY(-3px);
+  }
+
+  .footer-email a:hover {
+    transform: translateY(-3px);
   }
 
   .footer-social .icon {
-    color: var(--lightest-slate);
-    transition: 0.3s;
-    margin: 15px;
+    margin: 5px;
+    padding: 2px;
   }
 
   .footer-social .icon:hover {

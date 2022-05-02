@@ -6,8 +6,8 @@
 
 .expanded {
   display: none;
-  margin-right: 70px;
-  margin-top: 7px;
+  margin-right: 40px;
+  margin-top: 5px;
 }
 
 .hamburger-icon {
@@ -29,15 +29,15 @@
 }
 
 .hamburger-wrap {
-  display: none;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
   backdrop-filter: blur(5px);
+  display: none;
+  font-size: 18px;
+  height: 100vh;
+  justify-content: end;
   position: fixed;
   top: 15px;
-  justify-content: end;
-  font-size: 18px;
+  width: 100vw;
+  z-index: 100;
 }
 
 .hamburger-wrap.show-hamburger .hamburger-menu .navbar-item {
@@ -105,12 +105,13 @@
 
   .navbar-item {
     margin-right: 40px;
-    font-size: var(--medium-font);
+    font-size: 14px;
   }
 
   .navbar-button {
-    font-size: var(--medium-font);
+    font-size: 14px;
   }
+
   .navbar-button .btn {
     padding: 10px 30px;
   }

@@ -20,7 +20,7 @@ function Header() {
       setShowTop(false);
       setShowLow(true);
     }
-    else if(window.scrollY > 100) {
+    else if(window.scrollY > 80) {
       prevScroll = window.scrollY;
       setShowTop(false);
       setShowLow(false);
